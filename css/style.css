@@ -1,0 +1,315 @@
+* {
+  background-color: #ffbe98;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Pretendard-Regular";
+}
+/* .wrap {
+  max-width: 80%;
+  margin: 0 auto;
+} */
+.menu_container {
+  width: 25%;
+  height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 20px;
+  position: fixed;
+  background-color: white;
+}
+.title {
+  color: black;
+  font-weight: 700;
+  font-size: x-large;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 50%;
+}
+#toggle_menu li {
+  padding-right: 10px;
+  padding-top: 10%;
+  background-color: white;
+  text-align: center;
+}
+#toggle_menu  li a {
+  color: black;
+  background-color: white;
+  font-size: large;
+}
+#toggle_menu_btn {
+  display: none;
+}
+#toggle {
+  display:none;
+}
+#toggle_menu {
+  background-color: white;
+  display: block;
+}
+/* .main {
+  height: 500px;
+} */
+.main p {
+  text-align: center;
+  font-size: x-large;
+  line-height: 500px;
+}
+#about {
+  width: 75%;
+  height: 100vh;
+  padding: 50px;
+  margin-left: 25%;
+}
+#about h2 {
+  text-align: center;
+  font-size: 50px;
+}
+.content {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  
+}
+.info p {
+  font-size: large;
+  margin: 30px;
+}
+.info i {
+  padding:0 30px;
+}
+.info a {
+  color: black;
+}
+#skill {
+  width: 75%;
+  height: 100vh;
+  padding: 50px;
+  margin-left: 25%;
+}
+#skill h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10%;
+}
+.icon {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.skill_info {
+  margin: 30px;
+}
+#skill img {
+  background-color: white;
+  object-fit: cover;
+}
+#skill p {
+  background-color: white;
+  padding-bottom: 20px;
+  font-size: x-large;
+}
+.develope {
+  width: 50%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+}
+.design {
+  width: 50%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+}
+.etc {
+  width: 50%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px;
+}
+#project {
+  width: 75%;
+  height: 100vh;
+  padding: 50px;
+  margin-left: 25%;
+}
+#project h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10%;
+}
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.list img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.overlay p {
+  background: none;
+  color: white;
+}
+.list:hover .overlay {
+  opacity: 1;
+}
+#contact {
+  width: 75%;
+  height: 100vh;
+  padding: 50px;
+  margin-left: 25%;
+}
+#contact h2 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 30%;
+}
+.gform {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 5%;
+}
+.gform label {
+  margin-bottom: 10px;
+}
+.contact-field {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border: none;
+}
+.contact-field1 {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border: none;
+}
+.contact-btn {
+  background: rgba(255, 255, 255, 0.6);
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 10%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  #toggle_menu_btn {
+    display: none; 
+  }
+  #toggle {
+    display: block;
+    position: absolute;
+    right: 20px; 
+    top: 20px;
+    z-index: 1001; 
+  }
+  #toggle_menu {
+  display: none;
+  position: absolute; 
+  width: 100%;
+  background-color: white;
+  top: 60px; 
+  right: 0;
+  z-index: 1000;
+  }
+  #toggle_menu li {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  }
+  nav input#toggle_menu_btn:checked ~ ul#toggle_menu {
+    display: block;
+  }
+  .menu_container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    position: relative; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    z-index: 1000; 
+}
+  .title {
+    margin-bottom: 0;
+    background:none;
+  }
+  #about {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    margin-left: 0;
+  }
+  #skill {
+    width: 100%;
+    height: auto;
+    padding: 0 10%;
+    padding-bottom: 10%;
+    margin-left: 0;
+  }
+  .icon {
+    flex-direction: column;
+  }
+  .develope {
+    width: 100%;
+  }
+  .design {
+    width: 100%;
+  }
+  .etc {
+    width: 100%;
+  }
+  #project {
+    width: 100%;
+    height: auto;
+    padding: 0 10%;
+    padding-bottom: 10%;
+    margin-left: 0;
+  }
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #contact {
+    width: 100%;
+    height: auto;
+    padding: 0 10%;
+    padding-bottom: 10%;
+    margin-left: 0;
+  }
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

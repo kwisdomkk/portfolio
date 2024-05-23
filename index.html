@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Jeje's</title>
+    <!-- <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="menu_container">
+          <div class="title">Jeje's Portfolio</div>
+          <nav>
+            <input type="checkbox" id="toggle_menu_btn">
+            <label id="toggle" for="toggle_menu_btn">
+                <img src="images/but_toggle.png" alt="toggle menu button">
+            </label>
+            <ul id="toggle_menu">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="main">
+        <div>
+          <!-- <p>안녕하세요. 영진직업전문학교 스마트 웹/앱 4기 권지혜 입니다.</p> -->
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="content">
+          <div class="info">
+            <p><i class="fa-solid fa-user"></i> 권지혜</p>
+            <p><i class="fa-solid fa-calendar"></i> 1995.9.27</p>
+            <p><i class="fa-solid fa-phone"></i> 010-2240-9441</p>
+            <p><i class="fa-solid fa-location-dot"></i> 대구광역시 동구</p>
+            <p><i class="fa-solid fa-envelope"></i> kwisdom95@naver.com</p>
+            <p><i class="fa-solid fa-link"></i>https://github.com/kwisdomkk</p>
+          </div>
+        </div>
+      </section>
+      <section id="skill">
+        <h2>Skills</h2>
+        <div>
+          <div class="skill_info">
+            <div class="icon">
+              <div class="develope">
+                <p>Development</p>
+                <img src="images/html.png" />
+                <img src="images/css.png" />
+                <img src="images/javascript.png" />
+                <img src="images/jquery.png" />
+                <img src="images/react.png" />
+                <img src="images/express.png" />
+                <img src="images/node-js.png" />
+                <img src="images/mongodb.png" />
+                <img src="images/mysql.png" />
+              </div>
+              <div class="design">
+                <p>Design</p>
+                <img src="images/figma.png" />
+                <img src="images/adobe-xd (1).png" />
+                <img src="images/photoshop.png" />
+                <img src="images/illustrator.png" />
+              </div>
+              <div class="etc">
+                <p>Etc.</p>
+                <img src="images/vscode.png"/>
+                <img src="images/github.jpeg"/>
+                <img src="images/cloudtype.png"/>
+                <img src="images/netlify.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <div class="list">
+            <a href="https://willowy-trifle-a6aadb.netlify.app" target="_blank"><img src="images/marvel.png"/>
+            <div class="overlay">
+              <p class="">리액트를 활용한 마블 클론 코딩 입니다.</p>
+            </div>
+            </a>
+          </div>
+          <div class="list">
+            <a href="https://fascinating-fenglisu-26ba8d.netlify.app" target="_blank"><img src="images/web.png"/>
+            <div class="overlay">
+              <p class="">반응형으로 제작된 주세페 주스티 리뉴얼 페이지 입니다. <br/>html,css,javascript를 활용했습니다.</p>
+            </div>
+            </a>
+          </div>
+          <div class="list">
+            <a href="https://cool-lebkuchen-b12e87.netlify.app" target="_blank"><img src="images/todo.png"/>
+            <div class="overlay">
+              <p class="">자바스크립트를 활용한 to-do-list 입니다. html,css,javascript를 활용했습니다.</p>
+            </div>
+            </a>
+          </div>
+          <div class="list">
+            <a href="https://xmfkdnak98.mycafe24.com/" target="_blank"><img src="images/nara.png"/>
+            <div class="overlay">
+              <p class="">PHP로 제작된 팀 프로젝트 입니다. 웹 퍼블리싱 및 프론트엔드를 담당 하였고,<br/> 마이페이지,캘린더,회원가입 등을 담당하였습니다.</p>
+            </div>
+            </a>
+          </div>
+          <div class="list">
+            <a href="https://kidcare.netlify.app/" target="_blank"><img src="images/carekids.png"/>
+            <div class="overlay">
+              <p class="">리액트와 나이스 데이터셋 api로 제작된 팀 프로젝트 입니다. 프론트엔드를 담당 하였고,<br/>급식정보,캘린더 및 데이터를 전박적으로 담당하였습니다. </p>
+            </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form class="gform" action="https://script.google.com/macros/s/AKfycbxRbFQXAPUCcbJ1Yxrb5w1syC5C9kB7cE7ldlxEOKBH4NneEqnSMNZnVUnYw9Hg3sCp/exec" method="POST" method="POST" data-email="clothes.yoo@gmail.com" >
+            <label>Name</label>
+            <input class="contact-field" type="text" placeholder="이름">
+            <label>Email</label>
+            <input class="contact-field" type="text" placeholder="이메일">
+            <label>Message</label>
+            <textarea class="contact-field1" placeholder="내용"></textarea>
+            <input class="contact-btn" type="submit" value="Send">
+        </form>
+    </div>
+    <script>
+      $(document).ready(function() {
+          var toggle = $('#toggle');
+          var menu = $('#toggle_menu');  
+          toggle.on('click', function(e) {
+              e.preventDefault(); 
+              menu.slideToggle();
+          });
+      });
+  </script>
+  
+  </body>
+</html>
