@@ -123,15 +123,16 @@
       </section>
       <section id="contact">
         <h2>Contact</h2>
-        <form class="gform" action="https://script.google.com/macros/s/AKfycbxRbFQXAPUCcbJ1Yxrb5w1syC5C9kB7cE7ldlxEOKBH4NneEqnSMNZnVUnYw9Hg3sCp/exec" method="POST" method="POST" data-email="clothes.yoo@gmail.com" >
+        <form class="gform" action="https://script.google.com/macros/s/AKfycbwvpxtx14OqCVuzEpzpV3inMEt875KeqI0f3hWzWfUa89R46HQ14_YqefXhjKdb5IqC/exec" method="POST" method="POST" data-email="clothes.yoo@gmail.com" >
             <label>Name</label>
-            <input class="contact-field" type="text" placeholder="이름">
+            <input name="name" class="contact-field" type="text" placeholder="이름">
             <label>Email</label>
-            <input class="contact-field" type="text" placeholder="이메일">
+            <input name="email" class="contact-field" type="text" placeholder="이메일">
             <label>Message</label>
-            <textarea class="contact-field1" placeholder="내용"></textarea>
+            <textarea name="message" class="contact-field1" placeholder="내용"></textarea>
             <input class="contact-btn" type="submit" value="Send">
         </form>
+      </section>
     </div>
     <script>
       $(document).ready(function() {
@@ -142,6 +143,9 @@
               menu.slideToggle();
           });
       });
+  </script>
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
   </script>
   
   </body>
