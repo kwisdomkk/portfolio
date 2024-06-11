@@ -7,9 +7,9 @@
   list-style: none;
   font-family: "Pretendard-Regular";
 }
-a {
+/* a {
   background: white;
-}
+} */
 /* .wrap {
   max-width: 80%;
   margin: 0 auto;
@@ -144,7 +144,7 @@ a {
 }
 #projects {
   width: 75%;
-  height: 100vh;
+  height: 100%;
   padding: 50px;
   margin-left: 25%;
 }
@@ -160,21 +160,46 @@ a {
   border-radius: 20px;
   display: flex;
   gap: 10px;
+  margin: 20px;
 }
 .project_image {
   width: 50%;
-  /* background: white */
+  background: white;
+}
+.project_image a {
+  background: white;
 }
 .project_image img {
   width: 100%;
-  background: white
+  background: white;
 }
 .project_sub {
   width: 50%;
   background: white;
+  font-size: large;
+  line-height: 30px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  margin:20px;
 }
 .project_sub p {
   background: white;
+  padding:50px 0;
+}
+.project6 {
+  width: 100%;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+.project6 img {
+  width: 300px;
+  height: 600px;
+  margin-left: 150px;
 }
 #contact {
   width: 75%;
@@ -221,7 +246,7 @@ a {
   border: none;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #toggle_menu_btn {
     display: none; 
   }
@@ -304,7 +329,7 @@ a {
     padding-bottom: 10%;
     margin-left: 0;
   }
-}
+} */
 @font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
